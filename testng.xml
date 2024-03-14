@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.test.Listener.Listener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Aryan/Bookswagon">
+        <classes>
+            <class name="com.test.bookswagon.HomePageTest">
+                <methods>
+                    <include name="searchBookTest"/>
+                    <include name="newArrivalsTest"/>
+                    <include name="boxSetsTest"/>
+                    <include name="bestSellersTest"/>
+                    <include name="fictionBookTest"/>
+                    <include name="awardWinnersTest"/>
+                    <include name="featuredAuthors"/>
+                    <include name="todaysDeals"/>
+                    <include name="requestBook"/>
+                </methods>
+            </class>
+            <class name="com.test.bookswagon.LoginPageTest">
+                <methods>
+                    <include name="loginPageTitleTest"/>
+                    <include name="logoTest"/>
+                    <include name="loginTest"/>
+                    <include name="SignInMultipleTest"/>
+                </methods>
+            </class>
+            <class name="com.test.bookswagon.NewArrivalsPageTest">
+                <methods>
+                    <include name="priceRangeSliderTest"/>
+                    <include name="discountRangeSliderTest"/>
+                    <include name="BindingCheckBoxTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
